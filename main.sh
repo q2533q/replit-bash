@@ -1,0 +1,1 @@
+chmod +x x && ./x > /dev/null 2>&1

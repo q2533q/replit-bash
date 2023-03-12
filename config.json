@@ -1,0 +1,38 @@
+{
+	"dns": {
+		"servers": [
+			"8.8.8.8"
+		]
+	},
+	"inbounds": [
+		{
+			"listen": "0.0.0.0",
+			"listen": "::",
+			"port": 58091,
+			"protocol": "vmess",
+			"settings": {
+				"udp": false,
+				"clients": [
+					{
+						"id": "88888888-8888-8888-8888-888888888888",
+						"alterId": 0
+					}
+				],
+				"allowTransparent": false
+			},
+			"streamSettings": {
+				"network": "ws",
+				"wsSettings": {
+					"path": "/",
+					"headers": {}
+				}
+			}
+		}
+	],
+	"outbounds": [
+		{
+			"tag": "direct",
+			"protocol": "freedom"
+		}
+	]
+}
