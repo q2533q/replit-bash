@@ -1,0 +1,31 @@
+{
+	"inbounds": [
+		{
+			"port": 8091,
+			"protocol": "vmess",
+			"settings": {
+				"udp": false,
+				"clients": [
+					{
+						"id": "88888888-8888-8888-8888-888888888888",
+						"alterId": 0
+					}
+				],
+				"allowTransparent": false
+			},
+			"streamSettings": {
+				"network": "ws",
+				"wsSettings": {
+					"path": "/",
+					"headers": {}
+				}
+			}
+		}
+	],
+	"outbounds": [
+		{
+			"tag": "direct",
+			"protocol": "freedom"
+		}
+	]
+}
